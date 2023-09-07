@@ -1,0 +1,51 @@
+{% extends 'admin_interface.html' %}
+
+
+{% block title%}
+  Admin Change
+{%endblock%}
+
+{% block name%}
+Admin
+{%endblock%}
+
+{% block body%}
+
+<style>
+    #inp2{
+        margin-left: 8px;
+    }
+    #inp3{
+        margin-left: 11px;
+    }
+    #inp4{
+        text-align: center;
+        margin-left: 160px;
+    }
+    #ad_frm{
+        margin-top: 50px;
+        margin-left: 200px;
+        padding-top: 50px;
+        padding-left: 120px;
+        padding-bottom: 50px;
+    }
+</style>
+    <div class="container">
+        <div class="border w-50" id="ad_frm">
+            <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %} 
+            <label for="ad_usr">Change user name:</label>
+            <input type="text" id="inp1" name="uname " value="{{unm.uname}}" required><br><br>
+
+            <label for="ad_usr">Change password:</label>
+            <input type="password" id="inp2" name="password" required><br><br>
+
+            <label for="ad_usr">Confirm password</label>
+            <input type="password" id="inp3" name="cpassword" required><br><br><br>   
+
+            <input type="submit" value="Change" class="btn btn-primary " id="inp4" >
+        </form>
+        </div>
+    </div>
+{%endblock%}
+

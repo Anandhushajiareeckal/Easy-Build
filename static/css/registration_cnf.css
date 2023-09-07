@@ -1,0 +1,33 @@
+body{
+    background: rgb(12, 193, 243);
+}
+#reg_text{
+    padding-left: 30px;
+    font-size: 50px;
+}
+#reg_main{
+    background-color: white;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 400px;
+    margin-right: 450px;
+    margin-top: 20px;
+}
+#log_easybulid{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+    font-size: 50px;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+#log_build{
+    color: rgb(203, 21, 21);
+}
+#btn_us{
+    margin-right: 20px;
+    width: 100px;
+}
+#btn_wr{
+    width: 100px;
+}

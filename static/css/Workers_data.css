@@ -1,0 +1,37 @@
+body{
+    background: rgb(12, 193, 243);
+}
+#log_easybulid{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+    font-size: 50px;
+    margin-left: 500px;
+    margin-top: 60px;
+}
+#log_build{
+    color: rgb(203, 21, 21);
+}
+#descrip_work{
+    background: white;
+    padding-left:50px ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    margin-left: 350px;
+    margin-right: 390px;
+}  
+#inp_1{
+    margin-left: 14px;
+} 
+#inp_2{
+    margin-left: 50px;
+}
+#inp_5{
+    margin-left: 150px;
+}
+#inp_3{
+    padding-left: 10px;
+}
+.inp_6{
+    padding-left: 175px;
+}

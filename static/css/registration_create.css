@@ -1,0 +1,44 @@
+body{
+    background: rgb(12, 193, 243);
+}
+#reg_main{
+    background: white;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 80px;
+    margin-left: 350px;
+    margin-right: 350px;
+
+}
+#inp_2{
+    margin-left: 12px;
+
+}
+#inp_1{
+    margin-left: 7px;
+}
+#reg_hed{
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+#inp_4{
+    margin-left: 140px;
+    margin-top: 20px;
+    width: 100px;
+}
+#log_easybulid{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+    font-size: 50px;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+#log_build{
+    color: rgb(203, 21, 21);
+}
+.reg_alert{
+    color: red;
+    padding-left: 140px;
+   font-family: 'Times New Roman', Times, serif;
+}

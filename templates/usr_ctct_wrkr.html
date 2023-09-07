@@ -1,0 +1,55 @@
+{%extends 'user_interface.html' %}
+
+{% block title%}
+User_home
+{%endblock%}
+
+{% block body %}
+<style>
+
+#Name, #Phone, #Email, #Sex, #Location{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left:20px;
+    margin-top:15px;
+    
+}
+#detail_1{
+    
+    margin-left: 200px;
+    margin-right: 650px;
+    margin-top: 20px;
+    padding-top: 40px;
+    width: 100%;
+    height: 500px;
+}
+#detail_2{
+    
+    width:100%;
+}
+#Name1{
+   padding-left: 150px;
+}
+#Phone1{
+    padding-left: 143px;
+}
+#Email1{
+    padding-left: 149px;
+}
+#Sex1{
+    padding-left: 179px; 
+}
+#Location1{
+    padding-left: 112px;  
+}
+</style>
+<div id= "detail_1" >
+    <div id= "detail_2">
+        <h3 id="Name"><span > Name </span>:<span id="Name1">{{log.name}}</span></h3><br>
+        <h3 id="Phone"><span > Phone </span>:<span id="Phone1">{{log.phone}}</span></h3><br>
+        <h3 id="Email"><span > Email </span>:<span id="Email1">{{log.email}}</span></h3><br>
+        <h3 id="Sex"><span > Sex </span>:<span id="Sex1">{{log.sex}}</span></h3><br>
+        <h3 id="Location"><span > Location </span>:<span id="Location1">{{log.location}},{{log.district}},{{log.state}}</span></h3><br>
+    </div>
+</div>
+
+{%endblock%}

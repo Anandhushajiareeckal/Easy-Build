@@ -1,0 +1,76 @@
+{% extends 'admin_interface.html' %}
+
+{% block title%}
+Admin_home
+{%endblock%}
+
+{% block name%}
+Admin
+{%endblock%}
+
+{%block body%}
+
+<style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+    }
+    #tbl-main{
+        width: 1000px;
+        margin-left: 200px;
+        margin-top: 50px;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+      text-align: center;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+
+    
+    <div id="tbl-main">
+    
+    <table >
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Sex</th>
+                    <th>District</th>
+                    <th>User name</th>
+                    <th></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in log%}
+                <tr>
+                    <td>{{i.name}}</td>
+                    <td>{{i.phone}}</td>
+                    <td>{{i.sex}}</td>
+                    <td>{{i.district}}</td>
+                    <td>{{i.uname}}</td>
+                    <th><a  href="{% url 'admin_user_view'%}?val2={{i.uname}}"><button type="submit"  class="btn btn-danger ">Delete</button></a></th>
+                </tr>
+                {%endfor%}
+            </tbody>
+
+
+
+
+
+
+      
+    </table>
+</div>
+    
+{%endblock%}

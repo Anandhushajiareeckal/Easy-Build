@@ -1,0 +1,90 @@
+{% extends 'user_interface.html' %}
+
+{% block title%}
+Workers profile
+{%endblock%}
+
+{% block uname%}
+   {{nme.name}}
+{%endblock%} 
+
+{% block body %}
+<style>
+    #wr_prf{
+        width: 400px;
+        height: 500px;
+        margin-top: 25px;
+        margin-left: 370px;
+        
+    }
+    #wr_prf_img{
+        width: 150px;
+        height: 140px;
+        margin-left: 120px;
+        padding-top: 10px;
+    }
+    #wr_prf_nme{
+        margin-top: 20px;
+    }
+    #wr_prf_job{
+        padding-left: 30px;
+    }
+    #wr_prf_wrpic{
+        width: 75%px;
+        margin-left: 20px;
+        margin-top: 20px;
+        
+    }
+    #wr_prf_btn{
+        padding-bottom: 20px;
+        
+    }
+    #sel_btn{
+        width: 500px;
+    }
+</style>
+
+<div class="container ">
+    
+        <div id="wr_prf">
+            <img src="{{log.image_face.url}}" class="d-block  rounded-circle  " alt="Logo"  id="wr_prf_img" >
+            <h3 id="wr_prf_nme" class="text-center">{{log.name}}</h3><br>
+            <h5 id="wr_prf_job">{{log.field}}</h5>
+            <p>{{log.discription}}</p><br>
+
+            <h5>Experience : {{log.experience}}  {{log.exp_cnf}}</h5><br>
+            
+        
+        </div>
+
+        <div>
+            <h3>His works:</h3>            
+
+            <div class="row row-cols-1 row-cols-md-5 g-4"id="wr_prf_wrpic">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="{{log.image_work1.url}}" class="card-img-top" alt="...">
+                  </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                      <img src="{{log.image_work2.url}}" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card h-100">
+                      <img src="{{log.image_work3.url}}" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+            </div><br><br>
+        <div class="d-grid gap-2 col-6 mx-auto" id="wr_prf_btn">
+            
+                
+                <a  href="{% url 'wr_prf_usr'%}?val={{log.uname}}"><button type="submit"  class="btn btn-primary " id="sel_btn">Select</button></a>
+          </div>
+
+</div>
+
+{%endblock%}

@@ -1,0 +1,44 @@
+{% extends 'wrkr_interface.html' %}
+
+
+{% block title%}
+  User profile
+{%endblock%}
+
+
+{% block body%}
+
+<div class="container">
+  
+  
+    <div id="wr_prof" class="border w-50">
+      <h3 id="wr_pof_hed">Edit your profile</h3><br>
+
+      <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="edt_">Edit name:</label>
+        <input type="text" value="{{log.name}}" id="inp1" name="name"><br><br>
+
+        <label for="edt_">Edit  field:</label>
+        <input type="text" value="{{log.field}}" id="inp3" name="field"><br><br>
+
+        <label for="edt_">Edit experiance:</label>
+        <input type="text" value="{{log.experience}}" id="inp4" name="experience">
+
+        <select name="exp_cnf" id="" required name="exp_cnf">
+          <option value="Month">Month</option>
+          <option value="Year">Year</option>
+        </select><br><br>
+
+        <label for="edt_">Edit discription:</label>
+        <input type="text" id="inp_5" style="height: 100px;" value="{{log.discription}}" name="discription"><br><br>
+
+        <input type="submit" value="Submit" class="btn btn-primary " id="wr_prof_sbmt">
+
+    </form>
+  </div>
+  
+  
+</div>
+
+{%endblock%}

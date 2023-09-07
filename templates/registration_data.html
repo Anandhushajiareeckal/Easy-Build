@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/registration_data.css' %}" >
+        <script src="{% static 'js/registration_data.js'%}"></script>
+        <title>Registration_collect_data</title>
+    </head>
+</head>
+<body>
+    <div class="container">
+        <h1 id="log_easybulid"><span > Easy </span><span id="log_build">Build</span></h1>
+        <div id="reg_main">
+            <h3 id="psnl_data">Enter Your Datas</h3>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <label for="name"> Enter name:</label>
+                    <input type="text" required placeholder="Enter your full name" id="inp_1" name="name"><br>
+                    <p id="name_alert"></p>
+                    <label for="phone"> Enter phone:</label>
+                    <input type="text" required placeholder="Enter your phone number" id="inp_2" name="phone"><br>
+                    <p id="phone_alert"></p>
+                    <label for="email"> Enter email:</label>
+                    <input type="email" required placeholder="Enter your email" id="inp_3" name="email"><br>
+                    <p id="email_alert"></p>
+                    <label for="sex"> Enter sex:</label>
+                    <select name="sex" required id="sex" >
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">other</option> 
+                    </select> <br>  
+                    <p id="sex_alert"></p>           
+                    <label for="state">Enter State:</label>
+                    <select name="state"  required id="state">
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                    </select> <br>  
+                    <p id="state_alert"></p>
+                    <label for="District">Enter district:</label>
+                    <input type="text" required placeholder="Enter your district" id="inp_4" name="district"><br>
+                    <p id="dist_alert"></p>
+                    <label for="Current Location"> Current Location:</label>
+                    <input type="text" required placeholder="Enter Current Location" id="inp_5" name="location"><br>
+                    <p id="loca_alert"></p>
+                    <label for="Languages Knows">Enter Languages Know:</label>
+                    <input type="text" required placeholder="Eg:English,Spanish" id="inp_6" name="Languages"><br>
+                    <p id="lang_alert"></p> 
+                    <label for="role">  I am a :</label>
+                    <select name="role" required id="role" >
+                        <option value="Worker">Worker</option>
+                        <option value="User">User</option>
+                    </select> <br><br>
+                    <input type="Submit" value="Submit" class="btn btn-primary " id="inp_7" onclick="register_data()">
+                    
+                </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body{
+    background: rgb(12, 193, 243);
+}
+#reg_main{
+    background: white;
+    padding-left: 100px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin-left: 300px;
+    margin-right: 400px;
+    margin-top: 60px;
+}
+#inp_5{
+    margin-left: 42px;
+}
+#inp_4 {
+    margin-left: 70px;
+}
+#state{
+    width: 190px;
+    margin-left: 80px;
+    height: 30px;
+}
+#inp_3{
+    margin-left: 78px;
+}
+#inp_2{
+    margin-left: 70px;
+}
+#inp_1{
+    margin-left: 75px;
+}
+#inp_7{
+    margin-left: 150px;
+}
+#log_easybulid{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 1000;
+    font-size: 50px;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+#log_build{
+    color: rgb(203, 21, 21);
+}
+#name_alert, #phone_alert, #email_alert, #state_alert, #dist_alert, #loca_alert, #lang_alert, #pass_alert{
+    color: red;
+    margin-left: 170px;
+}
+#psnl_data{
+    padding-left: 60px;
+    padding-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: 1000px;
+}
+#sex{
+    margin-left: 92px;
+    
+}
+#role{
+    margin-left: 115px;
+}

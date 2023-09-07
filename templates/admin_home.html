@@ -1,0 +1,41 @@
+{% extends 'admin_interface.html' %}
+
+{% block title%}
+Admin_home
+{%endblock%}
+
+{% block name%}
+Admin
+{%endblock%}
+
+
+{% block body%}
+<style>
+    #bord_cls{
+        padding-left:200px;
+        padding-top:50px;
+        padding-bottom:50px;
+        margin-top:100px;
+        margin-left:250px;
+    }
+    #btn1{
+       width:100px; 
+    }
+    #btn2{
+        width:100px
+    }
+    #btn3{
+        width:200px 
+    }
+</style>
+    <div class="container">
+
+        <div class="border w-50" id="bord_cls">
+            <a  href="{% url 'admin_worker_view'%}?val1='user'" ><button type="submit" class="btn btn-primary" id="btn1">Users</button></a>
+            <a  href="{% url 'admin_worker_view'%}?val2='wrkr'" ><button type="submit" class="btn btn-primary" id="btn2">Workers</button></a><br><br><br>
+            
+
+        </div>
+
+    </div>
+{%endblock%}

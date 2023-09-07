@@ -1,0 +1,19 @@
+{% extends 'wrkr_interface.html' %}
+
+
+{% block title%}
+  Worker home
+{%endblock%}
+
+
+{% block body%}
+
+<div class="container">
+    <div class=" border w-25" id="wr_btn">
+        <a  href="{% url 'wrkr_home'%}?val1={{log.uname}}" id="btn1"><button type="submit"  class="btn btn-primary">Edit  profile </button></a>
+        <a  href="{% url 'wrkr_home'%}?val2={{log.uname}}" id="btn2"><button type="submit"  class="btn btn-primary">Change password</button></a>
+    
+    </div>
+</div>
+
+{%endblock%}
